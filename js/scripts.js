@@ -38,4 +38,12 @@ $(document).ready(function() {
       $(this).toggleClass("background-green");
     });
   })
+
+  $("button#cat").click(function() {
+    $("h1").before("<li>Meow!</li>");
+  })
+
+  $("button#dog").click(function() {
+    $("h2").after('<img src="img/IMG_0150.JPG">');
+  })
 });
